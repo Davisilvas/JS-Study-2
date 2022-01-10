@@ -1,17 +1,12 @@
-var a = "3";
-
-var b = "5";
-
-var c = parseInt(a) + parseInt(b);
-
-console.log(c)
-
-/* EXEMPLO COM FLOAT
-var a = "3.5";
-
-var b = "5";
-
-var c = parseFloat(a) + parseFloat(b);
-
-console.log(c)
+/*
+EXEMPLO DE USO DO ALERT PARA CONSEGUIR INFORMÇÃO PARA MOSTRAR UMA MENSAGEM PERSONALIZADA!
+var nome = prompt("Qual é o seu nome?");
+alert("Bom dia, " + nome);
 */
+
+
+
+var numero = parseInt(prompt("digite um número"));
+var dobro = numero + numero;
+
+alert("O dobro de " + numero + " é " + dobro);
