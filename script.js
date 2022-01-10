@@ -1,40 +1,61 @@
-/*
-    ------------OPERADORES DE COMPARAÇÃO------------
-   == igual a
-   === valor igual e igual
-   != não é igual
-   !== não igual ou não igual
-   > maior que 
-   < menor que
-   > = maior que ou igual a
-   <= menor ou igual a
-*/
-
-//console.log(2==3); resultado: false
+// && e
+// || ou
+// ! negação 
 
 /*
-var a = 2;
-var b =3;
-console.log(a == b);
-OS SINAIS TAMBÉM SERVEM PARA COMPARAR AS VARIÁVEIS COM OUTRAS VARIÁVEIS E 
-COM OUTROS VALORES!
+    EXEMPLO BÁSICO DE &&
+var a = true;
+var b = false;
+var c = a&&b;
+console.log(c); RESULTADO FALSE!
+
+    EXEMPLO BÁSICO DE ||
+var a = true;
+var b = false;
+var c = a||b;
+console.log(c); RESULTADO TRUE!
+
+    EXEMPLO BÁSICO DE ! NEGAÇÃO
+var a = true;
+var b = !false;
+var c = a||b;
+console.log(c); RESULTADO TRUE!
 */
 
-/*var a = 3;
-var b = "3";
-console.log(a===b);
-este compara não só o valor mas também o tipo, logo se os valores forem iguais
-mas de tipos diferentes, ele vai retornar false */
+/*
+=============EXEMPLO COM O &&=============
+var idade = 20;
+var min = idade >= 20;
+var max = idade <=30;
+var pode = min && max;
 
-/*var a = 3;
-var b = "3";
-console.log(a !== b); Levou em consideração o tipo entquanto que o != não leva!!!*/
+console.log("idade", idade)
+console.log("maior que 20?", min)
+console.log("menor que 30?", max)
+console.log("pode?", pode) 
+*/
 
-/*var a = 3;
-var b = 3;
-console.log(a > b); só compara se os valores são maiores ou menores, não compara se os
-valores são iguais*/
 
-var a = 3;
-var b = 3;
-console.log(a>=b);
+/*
+=============EXEMPLO COM ||=============
+var idade = 69;
+var menor10 = idade <= 10;
+var maior65 = idade >= 65;
+var grat = menor10 || maior65;
+
+console.log("idade", idade);
+console.log("é menor que 10 anos?", menor10);
+console.log("é maior que 65 anos?", maior65);
+console.log("tem direito a gratuidade?", grat);
+*/
+
+
+/*
+=============EXEMPLO COM NEGAÇÃO !=============
+var idade = 10;
+var maior = idade >= 20;
+var menor = !maior;
+ 
+console.log ("maior que 20?", maior);
+console.log ("menor que 20?", menor);
+*/
