@@ -48,14 +48,11 @@ else{
 
 var idade = parseInt(prompt("inisira a sua idade"));
 
-if (idade >= 35){
+if (idade >= 18 && idade <= 70){
     console.log("pode comprar bebida");
     console.log("qual é o seu pedido de hoje?");
     }
-else if (idade >=18){    
-    console.log("pode comprar bebida");
-    console.log("mostre a indentidade");
-    }
+
 else{
     alert("não pode comprar bebida");   
     console.log("volte futuramente");
