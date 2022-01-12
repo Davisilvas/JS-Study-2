@@ -1,12 +1,34 @@
-/*
-var idade = 17;
+var n1 = parseFloat(prompt("Isira a primeira nota"));
+var n2 = parseFloat(prompt("Insira a segunda nota"));
+var m = (n1+n2) / 2 ;
+var conceito = ""
 
-idade >= 18 ? alert("pode beber " + idade) : alert("não pode beber " + idade);
-*/
+if ( m >= 8.5){
+    conceito = "Ótimo";    
+}
+else if (m >= 6.5){
+    conceito = "Bom";
+}    
+else{
+    conceito = "Regular";
+}
 
-//EXEMPLO DE VARIÁVEL RECEBENDO UM VALOR A PARTIR DE UM OPERADOR TERNÁRIO
-var idade = 18;
+console.log(m);
+console.log(conceito);
 
-var pode = idade >= 18 ? true : false;
+//conceito = "vasco";
 
-console.log(pode);
+switch(conceito){
+
+    case "Ótimo":
+        console.log("Parabéns, você é um ótimo aluno");
+        break;
+    case "Bom":
+        console.log("Parabéns você é um bom aluno e tem mais potencial a ser explorado");
+        break;
+    case "Regular":
+        console.log("Você precisa de um pouco mais de dedicação");
+        break;
+    default:
+        console.log("Houve algum erro");
+}
