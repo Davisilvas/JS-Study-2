@@ -2,7 +2,10 @@ function media(n1, n2){
     var nota1 = n1;
     var nota2 = n2;
     var m = (nota1 + nota2) /2;
-    //console.log (m);
+    if (m>=7)
+        console.log("Parabéns você está a aprovado e sua média é " + m);
+    else
+        console.log("Estude mais, sua média foi " + m + " e você está de recuperação");    
     return m;
 }
 
