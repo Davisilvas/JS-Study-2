@@ -1,25 +1,24 @@
-/*
-EXEMPLO DE VARIÁVEL PASSANDO A REPRESENTAR A FUNÇÃO
-function media(n1, n2){
-    var nota1 = n1;
-    var nota2 = n2;
-    var m = (nota1 + nota2) /2;
+var nomes = ["Davi", "Maria", "Doly"];
+var notasA = [7.0, 8.0, 9.0];
+var notasB = [5.0, 10.0, 10.0];
 
-    return m;
+function media (n1, n2){
+    return(n1 + n2)/2
 }
-var result1 = media(parseFloat(prompt("Insira a nota 1")), parseFloat(prompt("Insira a nota 2")));
-console.log(result1);
 
-var mediaFinal = media;
-var result2 = mediaFinal(8, 7);
-console.log(result2);
-============================
-*/
-
-
-//var mf = (n1, n2) => {  ARROW FUNCTION
-var mf = function(n1, n2){
-
-    return (n1 + n2)/2
+function passou (media){
+    if (media >= 7)
+        return "APROVADO";
+    else 
+        return "REPROVADO";
 }
-console.log(mf(8, 9));
+
+for(var index in nomes){
+
+    var nota1 = notasA[index];
+    var nota2 = notasB[index];
+    var m = media(nota1, nota2);
+
+    console.log(nomes[index] + " - " + nota1 + 
+    " - " + nota2 + " - " + m + " - " + passou(m));
+}
