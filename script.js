@@ -1,5 +1,8 @@
 var nomes = ["Davi", "Maria", "Doly"];
-var materias = ["Química", "Física", "Geometria"];
+//var materias = ["Química", "Física", "Geometria"];
+var quim = "Química";
+var fis = "Física";
+var Geom = "Geometria";
 var notas1Q = [7.0, 8.0, 9.0];
 var notas2Q = [5.0, 10.0, 10.0];
 var notas1F = [9.0, 8.8, 10.0];
@@ -35,6 +38,8 @@ for(var index in nomes){
 
     //var subject = materias[index];
 
-    console.log(nomes[index] + " - " + nota1 + 
-    " - " + nota2 + " - " + m + " - " + passou(m));
+    console.log(nomes[index] + " - " +
+    quim + " - " + ntq1 + " - " + ntq2 + " - " + mq + " - " + passou(mq) +
+    " - " + fis + " - " + ntf1 + " - " + ntf2 + " - " + mf + " - " + passou(mf) + " - " +
+    Geom + " - " + ntg1 + " - " + ntg2 + " - " + mg + " - " + passou(mg));
 }
