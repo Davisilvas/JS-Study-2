@@ -1,45 +1,56 @@
-var nomes = ["Davi", "Maria", "Doly"];
-//var materias = ["Química", "Física", "Geometria"];
-var quim = "Química";
-var fis = "Física";
-var Geom = "Geometria";
-var notas1Q = [7.0, 8.0, 9.0];
-var notas2Q = [5.0, 10.0, 10.0];
-var notas1F = [9.0, 8.8, 10.0];
-var notas2F = [7.0, 4.7, 7.2];
-var notas1G = [8.5, 9.7, 7.1];
-var notas2G = [8.1, 8.2, 5.5];
+var aluno = { nome: "Davi", 
+              idade: 20,
+              notas: [9.0, 8.9]}
 
-function media (n1, n2){
-    return(n1 + n2)/2
-}
+//COMO CHAMAR UMA PROPRIEDADE DO OBJETO console.log(aluno.idade);
+//COMO CHAMAR O INDEX DE UM ARRAY NUM OBJETO console.log(aluno.notas[1]);
+//OUTRA FORMA DE CHAMAR UMA PROPRIEDADE console.log(aluno["nome"]);
+//SIMPLESMENTE CHAMANDO O OBJETO console.log(aluno);
+//console.log(aluno["notas"][1]);
 
-function passou (media){
-    if (media >= 7)
-        return "APROVADO";
-    else 
-        return "REPROVADO";
-}
+//aluno.matricula = 12344;
+//aluno["sobrenome"] = "Santos";
+//console.log(aluno.matricula);
+//console.log(aluno.sobrenome);
+
+var novaProp = "sobrenome"; 
+aluno[novaProp] = "Santos";
+console.log(aluno);
+
+var jogo = new Object();
+
+jogo["nome"] = "lol";
+console.log(jogo);
 
 
-for(var index in nomes){
 
-    var ntq1 = notas1Q[index];
-    var ntq2 = notas2Q[index];
-    var mq = media(ntq1, ntq2);
 
-    var ntf1 = notas1F[index];
-    var ntf2 = notas2F[index];
-    var mf = media(ntf1, ntf2);
 
-    var ntg1 = notas1G[index];
-    var ntg2 = notas2G[index];
-    var mg = media(ntg1, ntg2);
 
-    //var subject = materias[index];
 
-    console.log(nomes[index] + " - " +
-    quim + " - " + ntq1 + " - " + ntq2 + " - " + mq + " - " + passou(mq) +
-    " - " + fis + " - " + ntf1 + " - " + ntf2 + " - " + mf + " - " + passou(mf) + " - " +
-    Geom + " - " + ntg1 + " - " + ntg2 + " - " + mg + " - " + passou(mg));
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+FORMA DE USAR O ARRAY QUE EU NÃO TINHA PENSADO ANTES.
+var fff = [8, 9];
+var ddd = (fff[0] + fff[1])/2;
+console.log(ddd);
+
+*/
