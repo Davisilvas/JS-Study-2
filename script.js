@@ -38,8 +38,13 @@ function aluno(nome, n1, n2){
     }
 }
 var a = new aluno("Davi", 9, 8);
+var b = new aluno("Maria", 10, 8.9);
+
+
 console.log(a); 
 console.log(a.media())
+console.log(b); 
+console.log(b.media())
 //var turma = [
 //    criarAluno("Davi", 8.0, 7.7),
 //    criarAluno("Maria", 9.2, 8.9),
