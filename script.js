@@ -1,6 +1,10 @@
-//CRIANDO A DATA ATUAL 
-var d = new Date("sep 08 2015 13:56:38");
+var numero1 = 4;
+let numero2 = 5;
+const numero3 = {};
 
-console.log(d);
-console.log(d.setHours(19));
-console.log(d);
+//numero3.nome = "Davi"; 
+numero3.push(7);
+
+console.log(numero1);
+console.log(numero2);
+console.log(numero3);
