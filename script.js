@@ -1,14 +1,6 @@
-//function obj(n, s){
-//        return {nome: n, sobrenome: s}
-//}
-//
-//var a = obj("Neymar", "Júnior");
-//console.log(a);
+//CRIANDO A DATA ATUAL 
+var d = new Date("sep 08 2015 13:56:38");
 
-function obj(n , s){
-    this.nome = n;
-    this.sobrenome = s;
-}
-
-var a = new obj("Neymar", "Júnior");
-console.log(a);
+console.log(d);
+console.log(d.setHours(19));
+console.log(d);
